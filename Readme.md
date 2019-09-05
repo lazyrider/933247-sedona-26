@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Evgeniy Nagorniy](https://up.htmlacademy.ru/htmlcss/26/user/933247).
-* Наставник: `Неизвестно`.
+* Наставник: [Женя Прядко](https://htmlacademy.ru/profile/id598141).
 
 ---
 
