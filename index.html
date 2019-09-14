@@ -19,13 +19,13 @@
   	</header>
 
   	<main>
-  		<h1>Добро пожаловать в Седону!</h1> <!-- Это будет скрытый заголовок -->
+  		<h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
   		<section>
         <img src="img/svg/index-welcome-text.svg" width="459" height="353" alt="">
   		</section>
 
   		<section>
-        <h2>Информация о Седоне</h2>  <!-- Это будет скрытый заголовок -->
+        <h2 class="visually-hidden">Информация о Седоне</h2>  <!-- Это будет скрытый заголовок -->
   			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
@@ -38,15 +38,35 @@
       	<h2>Поиск гостиницы в Седоне</h2>
       	<p>Заинтересовались?</p>
       	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
-      	<!-- Здесь будет форма поиска -->
-
+      	<form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label>Дата заезда:
+              <input type="text" name="check-in-date" value="" placeholder="24 АПРЕЛЯ 2017">
+            </label>
+          </p>
+          <p>
+            <label>Дата выезда:
+              <input type="text" name="check-out-date" value="" placeholder="4 ИЮЛЯ 2017">
+            </label> 
+          </p>
+          <p>
+            <label>Взрослые: 
+              <input type="number" name="number-of-adults" min="1" step="1" value="2">
+            </label>
+          </p>
+          <p>
+            <label>Дети: 
+              <input type="number" name="number-of-children" min="0" step="1" value="0">
+            </label>
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
 
   	</main>
 
   	<footer>
-  		<p>#VISITSEDONA</p>
+  		<p>#visitsedona</p>
   		<ul>
   			<li><a href="https://twitter.com"><img src="img/svg/icon-twitter.svg" width="17" height="15" alt="">Twitter</a></li>
   			<li><a href="https://www.facebook.com"><img src="img/svg/icon-facebook.svg" width="12" height="22" alt="">Facebook</a></li>
