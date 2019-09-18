@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона - небольшой городок в Аризоне, заслуживающий большего!</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/sedona.css" rel="stylesheet">
   </head>
   <body>
 
   	<header>
-  		<nav>
+  		<nav class="main-navigation">
   			<a><img src="img/svg/header-logo.svg" width="140" height="71" alt="Логотип сайта"></a> <!-- пока не представляю как логотип сделать по центру меню, но надеюсь так можно -->
   			<ul>
   				<li><a href="">Информация</a></li>
@@ -19,13 +22,14 @@
   	</header>
 
   	<main>
-  		<h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-  		<section>
-        <img src="img/svg/index-welcome-text.svg" width="459" height="353" alt="">
+  		<section class="welcome-section">
+          <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+          <img src="img/svg/index-welcome-text.svg" width="459" height="353" alt="">
   		</section>
 
-  		<section>
-        <h2 class="visually-hidden">Информация о Седоне</h2>  <!-- Это будет скрытый заголовок -->
+  		<section class="info-section">
+
+        <h2 class="visually-hidden">Информация о Седоне</h2>
   			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
@@ -34,49 +38,62 @@
       </section>
 
 
-      <section> 
-      	<a href="#"><h2>Поиск гостиницы в Седоне</h2></a>
+      <section class="index-find-hotel-section"> 
+      	<h2 class="visually-hidden">Поиск гостиницы</h2>
       	<p>Заинтересовались?</p>
       	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <div>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label>Дата заезда:
-                 <input type="text" name="check-in-date" value="" placeholder="24 Апреля 2017">
-                </label>
-              </p>
-              <p>
-                <label>Дата выезда:
-                  <input type="text" name="check-out-date" value="" placeholder="4 Июля 2017">
-                </label> 
-              </p>
-              <p>
-                <label>Взрослые: 
-                  <input type="number" name="number-of-adults" min="1" step="1" value="2">
-                </label>
-              </p>
-              <p>
-                <label>Дети: 
-                  <input type="number" name="number-of-children" min="0" step="1" value="0">
-                </label>
-              </p>
-              <button type="submit">Найти</button>
-            </form>
-          </div>
+        <a href="#">
+          Поиск гостиницы в Седоне
+        </a>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p class="index-form">
+              <label>Дата заезда:
+               <input type="text" name="check-in-date" value="" placeholder="24 Апреля 2017">
+              </label>
+            </p>
+            <p class="index-form">
+              <label>Дата выезда:
+                <input type="text" name="check-out-date" value="" placeholder="4 Июля 2017">
+              </label> 
+            </p>
+            <p class="index-form">
+              <label>Взрослые: 
+                <input type="number" name="number-of-adults" min="1" step="1" value="2">
+              </label>
+            </p>
+            <p class="index-form">
+              <label>Дети: 
+                <input type="number" name="number-of-children" min="0" step="1" value="0">
+              </label>
+            </p>
+            <button class="button button-big" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
 
   	</main>
 
-  	<footer>
+  	<footer class="site-footer">
   		<p>#visitsedona</p>
   		<ul>
-  			<li><a href="https://twitter.com"><img src="img/svg/icon-twitter.svg" width="17" height="15" alt="">Twitter</a></li>
-  			<li><a href="https://www.facebook.com"><img src="img/svg/icon-facebook.svg" width="12" height="22" alt="">Facebook</a></li>
-  			<li><a href="https://www.youtube.com"><img src="img/svg/icon-youtube.svg" width="20" height="16" alt="">YouTube</a></li>		
+  			<a href="https://twitter.com">
+          <li class="button social-button social-button-twitter">Twitter</li>
+        </a>
+        <a href="https://www.facebook.com">
+  			  <li class="button social-button social-button-facebook">Facebook</li>
+        </a>
+        <a href="https://www.youtube.com">
+  			  <li class="button social-button social-button-youtube">YouTube</li>
+        </a>		
   		</ul>
-        <p>
-          Website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        </p>
+        <div class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            Website by <div>HTML Academy</div>
+          </a>
+        </div>
+
+        <!-- Как использовать в футере иконки svg и менять им цвет при наведении? -->
   	</footer>
 
   </body>
