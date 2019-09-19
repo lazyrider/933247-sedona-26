@@ -9,10 +9,10 @@
   </head>
   <body>
 
-  	<header>
-  		<nav class="main-navigation">
-  			<a><img src="img/svg/header-logo.svg" width="140" height="71" alt="Логотип сайта"></a> <!-- пока не представляю как логотип сделать по центру меню, но надеюсь так можно -->
-  			<ul>
+  	<header class="header">
+  		<nav class="header-navigation">
+  			<a class="header-logo"><img src="img/svg/header-logo.svg" width="140" height="71" alt="Логотип сайта"></a> <!-- пока не представляю как логотип сделать по центру меню, но надеюсь так можно -->
+  			<ul class="header-menu">
   				<li><a href="">Информация</a></li>
   				<li><a href="">Фото и видео</a></li>
   				<li><a href="">Карта штата</a></li>
@@ -22,12 +22,12 @@
   	</header>
 
   	<main>
-  		<section class="welcome-section">
+  		<section class="welcome">
           <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-          <img src="img/svg/index-welcome-text.svg" width="459" height="353" alt="">
+					<img src="img/svg/index-welcome-text.svg" width="459" height="353" alt="">
   		</section>
 
-  		<section class="info-section">
+  		<section class="about">
 
         <h2 class="visually-hidden">Информация о Седоне</h2>
   			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -38,52 +38,50 @@
       </section>
 
 
-      <section class="index-find-hotel-section"> 
+      <section class="find-hotel"> 
       	<h2 class="visually-hidden">Поиск гостиницы</h2>
       	<p>Заинтересовались?</p>
       	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#">
+        <a class="searchform-title" href="#">
           Поиск гостиницы в Седоне
         </a>
-        <div>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p class="index-form">
-              <label>Дата заезда:
-               <input type="text" name="check-in-date" value="" placeholder="24 Апреля 2017">
-              </label>
-            </p>
-            <p class="index-form">
-              <label>Дата выезда:
-                <input type="text" name="check-out-date" value="" placeholder="4 Июля 2017">
-              </label> 
-            </p>
-            <p class="index-form">
-              <label>Взрослые: 
-                <input type="number" name="number-of-adults" min="1" step="1" value="2">
-              </label>
-            </p>
-            <p class="index-form">
-              <label>Дети: 
-                <input type="number" name="number-of-children" min="0" step="1" value="0">
-              </label>
-            </p>
-            <button class="button button-big" type="submit">Найти</button>
-          </form>
-        </div>
+					<form class="searchform" action="https://echo.htmlacademy.ru" method="post">
+						<p class="searchform-item">
+							<label>Дата заезда:
+								<input type="text" name="check-in-date" value="" placeholder="24 Апреля 2017">
+							</label>
+						</p>
+						<p class="searchform-item">
+							<label>Дата выезда:
+								<input type="text" name="check-out-date" value="" placeholder="4 Июля 2017">
+							</label> 
+						</p>
+						<p class="searchform-item">
+							<label>Взрослые: 
+								<input type="number" name="number-of-adults" min="1" step="1" value="" placeholder="2">
+							</label>
+						</p>
+						<p class="searchform-item">
+							<label>Дети: 
+								<input type="number" name="number-of-children" min="0" step="1" value="" placeholder="0">
+							</label>
+						</p>
+						<button class="button button-big" type="submit">Найти</button>
+					</form>
       </section>
 
   	</main>
 
-  	<footer class="site-footer">
+  	<footer class="footer">
   		<p>#visitsedona</p>
-  		<ul>
+  		<ul class="footer-social">
         <li>
-          <a class="button social-button social-button-twitter" href="https://twitter.com">Twitter</a>
+          <a class="social-button button social-button-twitter" href="https://twitter.com">Twitter</a>
         </li>
   			<li>
-          <a class="button social-button social-button-facebook" href="https://www.facebook.com">Facebook</a>
+          <a class="social-button button social-button-facebook" href="https://www.facebook.com">Facebook</a>
         </li>
-  			<li><a class="button social-button social-button-youtube" href="https://www.youtube.com">YouTube</a>
+  			<li><a class="social-button button social-button-youtube" href="https://www.youtube.com">YouTube</a>
         </li>		
   		</ul>
         <p class="footer-copyright">
