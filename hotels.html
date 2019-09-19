@@ -9,10 +9,10 @@
   </head>
   <body>
 
-  	<header>
-  		<nav>
-  			<a href="index.html"><img src="img/svg/header-logo.svg" width="140" height="71" alt="Логотип сайта"></a> <!-- пока не представляю как логотип сделать по центру меню, но надеюсь так можно -->
-  			<ul>
+		<header class="header">
+			<nav class="header-navigation">
+  			<a class="header-logo" href="index.html"><img src="img/svg/header-logo.svg" width="140" height="71" alt="Логотип сайта"></a> <!-- пока не представляю как логотип сделать по центру меню, но надеюсь так можно -->
+  			<ul class="header-menu">
   				<li><a href="">Информация</a></li>
   				<li><a href="">Фото и видео</a></li>
   				<li><a href="">Карта штата</a></li>
@@ -26,44 +26,44 @@
       
   		<!-- Форму с поиском пропускаю -->
 
-  		<section>
+  		<section class="accomodation">
   			<h2 class="visually-hidden">Варианты жилья</h2>
   			<ul>
-  				<li>
-            <div>
+  				<li class="accomodation-item">
+            <div class="hotel-info">
               <h3>Amara Resort & Spa</h3>
-              <p><span>Гостиница</span> <span>от 4000 ₽</span></p>
-  					  <a href="">Подробнее</a>
-  						<a href="">Забронировать</a>
+              <p><span class="hotel-type">Гостиница</span> <span class="hotel-price">от 4000 ₽</span></p>
+  					  <a class="button" href="">Подробнее</a>
+  						<a class="brown-button" href="">Забронировать</a>
             </div>
-            <p><img src="img/images/photo-hotels-amara.jpg" width="135" height="90" alt="Amara Resort & Spa"></p> 
-  					<p>
+            <p class="hotel-image"><img src="img/images/photo-hotels-amara.jpg" width="135" height="90" alt="Amara Resort & Spa"></p> 
+  					<p class="hotel-rating">
               <span>Количество звезд 4 из 5</span>
   						<span>Рейтинг: 8,5</span>
   					</p>
   				</li>
-  				<li>
-  					<div>
+  				<li class="accomodation-item">
+  					<div class="hotel-info">
               <h3>Desert Quail Inn</h3>
-              <p><span>Мотель</span> <span>от 3000 ₽</span></p>
-  						<a href="">Подробнее</a>
-  						<a href="">Забронировать</a>
+              <p><span class="hotel-type">Мотель</span> <span class="hotel-price">от 3000 ₽</span></p>
+  						<a class="button" href="">Подробнее</a>
+  						<a class="brown-button" href="">Забронировать</a>
             </div>
-            <p><img src="img/images/photo-hotels-desert.jpg" width="135" height="90" alt="Desert Quail Inn"></p>
-            <p>
+            <p class="hotel-image"><img src="img/images/photo-hotels-desert.jpg" width="135" height="90" alt="Desert Quail Inn"></p>
+            <p class="hotel-rating">
   						<span>Количество звезд 3 из 5</span>
               <span>Рейтинг: 8,9</span>
             </p>
   				</li>
-  				<li>
-            <div>
+  				<li class="accomodation-item">
+            <div class="hotel-info">
               <h3>Villas At Poco Diablo</h3>
-  					  <p><span>Апартаменты</span> <span>от 2000 ₽</span></p>
-  						<a href="">Подробнее</a>
-  						<a href="">Забронировать</a>
+  					  <p><span class="hotel-type">Апартаменты</span> <span class="hotel-price">от 2000 ₽</span></p>
+  						<a class="button" href="">Подробнее</a>
+  						<a class="brown-button" href="">Забронировать</a>
             </div>
-            <p><img src="img/images/photo-hotels-villas.jpg" width="135" height="90" alt="Villas At Poco Diablo"></p>
-            <p>
+            <p class="hotel-image"><img src="img/images/photo-hotels-villas.jpg" width="135" height="90" alt="Villas At Poco Diablo"></p>
+            <p class="hotel-rating">
               <span>Количество звезд 2 из 5</span>
               <span>Рейтинг: 9,2</span>
             </p>
@@ -72,17 +72,25 @@
   		</section>  		
   	</main>
 
-  	<footer>
-  		<p>#visitsedona</p>
-  		<ul>
-        <li><a href="https://twitter.com"><img src="img/svg/icon-twitter.svg" width="17" height="15" alt="">Twitter</a></li>
-        <li><a href="https://www.facebook.com"><img src="img/svg/icon-facebook.svg" width="12" height="22" alt="">Facebook</a></li>
-        <li><a href="https://www.youtube.com"><img src="img/svg/icon-youtube.svg" width="20" height="16" alt="">YouTube</a></li>		
-  		</ul>
-  			<p>
-          Website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        </p>
-  	</footer>
+  	<footer class="footer">
+				<p>#visitsedona</p>
+				<ul class="footer-social">
+					<li>
+						<a class="social-button button social-button-twitter" href="https://twitter.com">Twitter</a>
+					</li>
+					<li>
+						<a class="social-button button social-button-facebook" href="https://www.facebook.com">Facebook</a>
+					</li>
+					<li><a class="social-button button social-button-youtube" href="https://www.youtube.com">YouTube</a>
+					</li>		
+				</ul>
+					<p class="footer-copyright">
+						Website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+					</p>
+	
+					<!-- Как использовать в футере иконки svg и менять им цвет при наведении? -->
+	
+			</footer>
 
   </body>
 </html>

@@ -33,6 +33,9 @@ a {
 
 	background-color: #81b3d2;
 	border: none;
+
+	transition-property: background-color;
+	transition-duration: 0.3s;
 }
 
 .button:hover,
@@ -45,6 +48,30 @@ a {
 
 	background-color: #5496bd
 }
+
+.brown-button {
+	font: inherit;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+
+	background-color: #766357;
+	border: none;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+.brown-button:hover,
+.brown-button:focus {
+	background-color: #604e43;
+}
+
+.brown-button:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #503e33;
+}
+
 
 .button-big {
 	font-size: 21px;
@@ -67,6 +94,8 @@ a {
 
 .header-menu a {
 	color: #000;
+	transition-property: color;
+	transition-duration: 0.2s;
 }
 
 .header-menu a:hover,
@@ -131,20 +160,6 @@ a {
 	font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-	color: #fff;
-
-	background-color: #766357;
-}
-
-.searchform-title:hover,
-.searchform-title:focus {
-	background-color: #604e43;
-}
-
-.searchform-title:active {
-	color: rgba(255, 255, 255, 0.3);
-
-	background-color: #503e33;
 }
 
 .searchform input {
@@ -182,6 +197,42 @@ a {
   font-weight: 700;
   line-height: 26px;
   color: #000;
+}
+
+.accomodation {
+	background-color: #fff;
+}
+
+.accommodation-options ul {
+	list-style: none;
+}
+
+.hotel-info h3 {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+  color: #000;
+}
+
+.hotel-type,
+.hotel-price {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #333;
+}
+
+.hotel-rating span:first-of-type {
+	font-size: 0;
+}
+
+.hotel-rating span:nth-of-type(2) {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #666;
+
+	background-color: #f2f2f2;
 }
 
 .footer {
@@ -256,6 +307,9 @@ a {
 	background-image: url("../img/images/htmlacademy-logo.png");
 	background-position: 0 0;
 	background-repeat: no-repeat;
+
+	transition-property: background-image;
+	transition-duration: 0.2s;
 }
 
 .footer-copyright a:hover,
