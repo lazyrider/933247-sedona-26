@@ -25,7 +25,7 @@ a {
   overflow: hidden;
 }
 
-.button {
+.button-blue {
 	font: inherit;
 	text-align: center;
 	color: #fff;
@@ -38,18 +38,18 @@ a {
 	transition-duration: 0.3s;
 }
 
-.button:hover,
-.button:focus {
+.button-blue:hover,
+.button-blue:focus {
 	background-color: #669ec0;
 }
 
-.button:active {
+.button-blue:active {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #5496bd
 }
 
-.brown-button {
+.button-brown {
 	font: inherit;
 	text-align: center;
 	color: #fff;
@@ -57,26 +57,20 @@ a {
 
 	background-color: #766357;
 	border: none;
+
 	transition-property: background-color;
 	transition-duration: 0.3s;
 }
 
-.brown-button:hover,
-.brown-button:focus {
+.button-brown:hover,
+.button-brown:focus {
 	background-color: #604e43;
 }
 
-.brown-button:active {
+.button-brown:active {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #503e33;
-}
-
-
-.button-big {
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 26px;
 }
 
 .header-navigation {
@@ -120,7 +114,7 @@ a {
 	background-color: #fff;
 }
 
-.about >  p:first-of-type {
+.about-title {
 	font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -128,7 +122,7 @@ a {
   color: #000;
 }
 
-.about > p:nth-of-type(2) {
+.about-description {
 	font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -140,7 +134,7 @@ a {
 	background-color: #fff;
 }
 
-.find-hotel > p:first-of-type {
+.find-hotel-title {
 	font-size: 30px;
   font-weight: 700;
 	line-height: 36px;
@@ -148,7 +142,7 @@ a {
   color: #000;
 }
 
-.find-hotel > p:nth-of-type(2) {
+.find-hotel-description {
 	font-size: 14px;
   font-weight: 400;
 	line-height: 24px;
@@ -203,11 +197,11 @@ a {
 	background-color: #fff;
 }
 
-.accommodation-options ul {
+.accommodation-options {
 	list-style: none;
 }
 
-.hotel-info h3 {
+.hotel-name {
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
