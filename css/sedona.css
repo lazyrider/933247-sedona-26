@@ -12,6 +12,30 @@ a {
 	text-decoration: none;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+.content-box {
+	box-sizing: content-box;
+}
+
+.container {
+	width: 1200px;
+	padding: 0;
+	margin: 0 auto;
+
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -74,6 +98,7 @@ a {
 }
 
 .header-navigation {
+	position: relative;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
@@ -82,8 +107,33 @@ a {
 	background-color: #fff;
 }
 
+.header-logo {
+	position: absolute;
+	left: 529px;
+	top: 0;
+}
+
 .header-menu {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.header-menu li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 239px;
+	height: 56px;
+
+	/*временно для сетки*/
+	outline: 1px solid green;
+}
+
+.header-menu li:nth-of-type(2) {
+	margin-right: auto;
 }
 
 .header-menu a {
@@ -102,51 +152,107 @@ a {
 }
 
 .welcome {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 1200px;
+	height: 509px;
 
 	background-color: transparent;
 	background-image: url("../img/images/index-welcome-bg.jpg");
 	background-position: center -56px;
 	background-repeat: no-repeat;
+
+	/*временно для сетки*/
+	outline: 1px solid green;
+}
+
+.welcome-logo {
+	width: 459px;
+	height: 353px;
+	margin-top: 76px;
+
+	/*временно для сетки*/
+	outline: 1px solid red;
+}
+
+.welcome-mask {
+	width: 1200px;
+	height: 59px;
+	margin-top: auto;
+
+	background-color: transparent;
+	background-image: url("../img/svg/welcome-section-mask.svg");
+	background-size: cover;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+
+	/* временно для сетки */
+	outline: 1px solid red;
 }
 
 .about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	background-color: #fff;
+	/*временно для сетки*/
+	outline: 1px solid green;
 }
 
 .about-title {
+	margin: 0;
+	margin-top: 61px;
+	margin-bottom: 38px;
+
 	font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
-  text-align: center;
+	line-height: 26px;
+	text-align: center;
   color: #000;
 }
 
 .about-description {
+	margin: 0;
+	margin-bottom: 56px;
+
 	font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  text-align: center;
   color: #333;
 }
 
 .find-hotel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
 	background-color: #fff;
+
+	/* временно для сетки */
+	outline: 1px solid red;
 }
 
 .find-hotel-title {
+	margin: 0;
+	margin-top: 57px;
+	margin-bottom: 38px;
+
 	font-size: 30px;
   font-weight: 700;
 	line-height: 36px;
-	text-align: center; 
   color: #000;
 }
 
 .find-hotel-description {
+	margin: 0;
+	margin-bottom: 52px;
+
 	font-size: 14px;
   font-weight: 400;
 	line-height: 24px;
-	text-align: center; 
   color: #333;
 }
 
@@ -154,6 +260,19 @@ a {
 	font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+
+.searchform {
+	width: 568px;
+
+	background-color: #fff;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.searchform-wrapper {
+	width: 458px;
+	margin: 55px auto;
+
 }
 
 .searchform input {
@@ -197,8 +316,46 @@ a {
 	background-color: #fff;
 }
 
+.accomodation-wrapper {
+	width: 1056px;
+	margin: 0 auto;
+}
+
 .accommodation-options {
+	padding: 0;
+	margin: 0;
+
 	list-style: none;
+}
+
+.accomodation-item {
+	display: flex;
+}
+
+.hotel-image {
+	width: 135px;
+	order: -1;
+
+	/* временно для сетки */
+	outline: 1px solid red;
+}
+
+.hotel-info {
+	width: 258px;
+	margin-left: 30px;
+	/* временно для сетки */
+	outline: 1px solid green;
+}
+
+.hotel-info p {
+	margin: 0;
+}
+
+.hotel-rating {
+	width: 110px;
+	margin-left: auto;
+	/* временно для сетки */
+	outline: 1px solid green;
 }
 
 .hotel-name {
@@ -230,22 +387,57 @@ a {
 }
 
 .footer {
+	display: flex;
+	align-items: center;
+	padding-top: 36px;
+	padding-bottom: 36px;
 	background-color: #fff;
-}
 
-.footer > p:first-of-type {
+	/* временно для сетки */
+	outline: 1px solid blue;
+	}
+
+.footer-hashtag {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 268px;
+	height: 48px;
+
+	margin: 0;
+
+
 	font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
-  color: #000;
+	line-height: 26px;
+	text-align: right;
+	color: #000;
+	
+	/* временно для сетки */
+	outline: 1px solid grey;
 }
 
 .footer-social {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
+	/* временно для сетки */
+	outline: 1px solid pink;
+}
+
+.footer-social li:first-child {
+	margin-left: 256px;
 }
 
 .footer-social li {
-	display: inline-block;
+	margin-right: 6px;
+}
+
+.footer-social li:last-child {
+	margin-right: 0;
 }
 
 .social-button {
@@ -284,14 +476,24 @@ a {
 }
 
 .footer-copyright {
+	display: flex;
+	width: 197px;
+	height: 41px;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+	margin-left: 228px;
+
 	font-size: 14px;
   font-weight: 400;
   line-height: 26px;
-  color: #000;
+	color: #000;
+	
+	/* временно для сетки */
+	outline: 1px solid grey;
 }
 
 .footer-copyright a {
-	display: inline-block;
 	width: 115px;
 	height: 41px;
 
@@ -303,7 +505,7 @@ a {
 	background-repeat: no-repeat;
 
 	transition-property: background-image;
-	transition-duration: 0.2s;
+	transition-duration: 0.3s;
 }
 
 .footer-copyright a:hover,
