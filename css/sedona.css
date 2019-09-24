@@ -108,6 +108,9 @@ p {
 }
 
 .header-logo {
+	display: block;
+	width: 140px;
+	height: 71px;
 	position: absolute;
 	left: 529px;
 	top: 0;
