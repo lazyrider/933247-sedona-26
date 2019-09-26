@@ -49,27 +49,26 @@
 					</a>
 						<form class="searchform" action="https://echo.htmlacademy.ru" method="post">
 							<div class="searchform-wrapper">
-							  <p class="searchform-item">
-									<label>Дата заезда:
-										<input type="text" name="check-in-date" value="" placeholder="24 Апреля 2017">
-									</label>
-								</p>
-								<p class="searchform-item">
-									<label>Дата выезда:
-										<input type="text" name="check-out-date" value="" placeholder="4 Июля 2017">
-									</label> 
-								</p>
-								<p class="searchform-item">
-									<label>Взрослые: 
-										<input type="number" name="number-of-adults" min="1" step="1" value="" placeholder="2">
-									</label>
-								</p>
-								<p class="searchform-item">
-									<label>Дети: 
-										<input type="number" name="number-of-children" min="0" step="1" value="" placeholder="0">
-									</label>
-								</p>
-								<button class="button-blue button-big" type="submit">Найти</button>
+
+							  <div class="searchform-item searchform-checkin">
+									<label for="checkin-date">Дата заезда:</label>
+									<input type="text" name="checkin-date" id="check-in-date" value="" placeholder="24 Апреля 2017">
+								</div>
+								<div class="searchform-item searchform-checkout">
+									<label for="checkout-date">Дата выезда:</label>
+									<input type="text" name="checkout-date" id="checkout-date" value="" placeholder="4 Июля 2017">
+								</div>
+								<div class="searchform-item searchform-adults">
+									<label for="number-of-adults">Взрослые: </label>
+									<input type="number" name="number-of-adults" id="number-of-adults" min="1" step="1" value="" placeholder="2">
+									</div>
+								<div class="searchform-item searchform-children">
+									<label for="number-of-children">Дети:</label>
+									<input type="number" name="number-of-children" id="number-of-children" min="0" step="1" value="" placeholder="0">
+								</div>
+
+								<button class="button-blue searchform-button" type="submit">Найти</button>
+
 							</div>
 						</form>
 				</section>

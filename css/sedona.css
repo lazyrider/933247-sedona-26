@@ -43,20 +43,26 @@ p {
   height: 1px;
  	margin: -1px;
  	border: 0;
-  padding: 0;
+	padding: 0;
+	
+	white-space: nowrap;
 
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .button-blue {
+	display: inline-block;
+
 	font: inherit;
 	text-align: center;
+	vertical-align: middle;
 	color: #fff;
 	text-transform: uppercase;
 
 	background-color: #81b3d2;
 	border: none;
+	cursor: pointer;
 
 	transition-property: background-color;
 	transition-duration: 0.3s;
@@ -81,6 +87,7 @@ p {
 
 	background-color: #766357;
 	border: none;
+	cursor: pointer;
 
 	transition-property: background-color;
 	transition-duration: 0.3s;
@@ -118,6 +125,7 @@ p {
 
 .header-menu {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 
@@ -125,21 +133,22 @@ p {
 }
 
 .header-menu li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 239px;
-	height: 56px;
-
 	/*временно для сетки*/
 	outline: 1px solid green;
 }
 
-.header-menu li:nth-of-type(2) {
-	margin-right: auto;
+.header-menu li:nth-of-type(4n-2) {
+	margin-right: 244px;
 }
 
 .header-menu a {
+	display: block;
+	width: 239px;
+	height: 56px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	text-align: center;
 	color: #000;
 	transition-property: color;
 	transition-duration: 0.2s;
@@ -163,7 +172,7 @@ p {
 
 	background-color: transparent;
 	background-image: url("../img/images/index-welcome-bg.jpg");
-	background-position: center -56px;
+	background-position: center -82px;
 	background-repeat: no-repeat;
 
 	/*временно для сетки*/
@@ -198,6 +207,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 61px;
 
 	background-color: #fff;
 	/*временно для сетки*/
@@ -206,7 +216,6 @@ p {
 
 .about-title {
 	margin: 0;
-	margin-top: 61px;
 	margin-bottom: 38px;
 
 	font-size: 21px;
@@ -230,6 +239,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-top: 57px;
 
 
 	background-color: #fff;
@@ -240,7 +250,6 @@ p {
 
 .find-hotel-title {
 	margin: 0;
-	margin-top: 57px;
 	margin-bottom: 38px;
 
 	font-size: 30px;
@@ -272,10 +281,11 @@ p {
 	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.searchform-wrapper {
-	width: 458px;
-	margin: 55px auto;
-
+.searchform label {
+	font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000;
 }
 
 .searchform input {
@@ -289,6 +299,58 @@ p {
 	background-color: #f2f2f2;
 	border: 2px solid #f2f2f2;
 	border: 0;
+}
+
+.searchform-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 458px;
+	margin: 55px auto;
+	
+	/* временно для сетки */
+	outline: 1px solid red;
+}
+
+.searchform-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.searchform-checkin,
+.searchform-checkout {
+	width: 100%;
+	margin-bottom: 29px;
+	/* временно для сетки */
+	outline: 1px solid red;
+}
+
+.searchform-checkin input,
+.searchform-checkout input {
+	width: 346px;
+	padding: 6px;
+	padding-left: 12px;
+}
+
+.searchform-adults {
+ 	width: 226px;
+	/* временно для сетки */
+	outline: 1px solid red;
+}
+
+.searchform-children {
+	width: 179px;
+	margin-bottom: 54px; 
+	/* временно для сетки */
+	outline: 1px solid red;
+}
+
+.searchform-adults input,
+.searchform-children input {
+	width: 114px;
+	padding: 6px;
 }
 
 .searchform input::-webkit-input-placeholder {
@@ -308,11 +370,13 @@ p {
 	border-color: #e5e5e5;
 }
 
-.searchform label {
-	font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
-  color: #000;
+.searchform-button {
+	width: 458px;
+	height: 58px;
+
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 26px;
 }
 
 .accomodation {
@@ -405,9 +469,8 @@ p {
 	justify-content: flex-end;
 	align-items: center;
 	width: 268px;
-	height: 48px;
-
 	margin: 0;
+	margin-right: 256px;
 
 
 	font-size: 21px;
@@ -422,8 +485,12 @@ p {
 
 .footer-social {
 	display: flex;
-	margin: 0;
+	justify-content: space-between;
+
+	width: 150px;
 	padding: 0;
+	margin: 0;
+	margin-right: 228px;
 
 	list-style: none;
 
@@ -431,20 +498,7 @@ p {
 	outline: 1px solid pink;
 }
 
-.footer-social li:first-child {
-	margin-left: 256px;
-}
-
-.footer-social li {
-	margin-right: 6px;
-}
-
-.footer-social li:last-child {
-	margin-right: 0;
-}
-
 .social-button {
-	display: block;
 	width: 46px;
 	height: 48px;
 	
@@ -481,11 +535,9 @@ p {
 .footer-copyright {
 	display: flex;
 	width: 197px;
-	height: 41px;
 	align-items: center;
 	justify-content: space-between;
 	margin: 0;
-	margin-left: 228px;
 
 	font-size: 14px;
   font-weight: 400;
