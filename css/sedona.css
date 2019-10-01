@@ -352,12 +352,11 @@ p {
 
 .searchform-item {
   display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .searchform label {
 	display: block;
+	margin-right: auto;
 
 	line-height: 38px;
 
