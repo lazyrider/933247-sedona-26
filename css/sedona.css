@@ -135,34 +135,7 @@ p {
 	outline: 1px solid green;
 }
 
-.header-menu li:nth-child(4n+1) a,
-.header-menu li:nth-child(4n+2) a { 
-	text-align: left;
-}
-
-.header-menu li:nth-child(4n-1) a,
-.header-menu li:nth-child(4n) a { 
-	text-align: right;
-} 
-
-.header-menu li:nth-child(4n+1) a {
-	padding-left: 72px;
-}
-
-.header-menu li:nth-child(4n+2) a {
-	padding-left: 73px;
-	margin-right: 244px;
-}
-
-.header-menu li:nth-child(4n-1) a {
-	padding-right: 73px;
-}
-
-.header-menu li:nth-child(4n) a {
-	padding-right: 72px;
-}
-
-.header-menu a {
+.header-menu li {
 	display: block;
 	width: 239px;
 	height: 56px;
@@ -177,6 +150,43 @@ p {
 	outline: 1px solid green;
 }
 
+.header-menu li:nth-child(4n+2) {
+	margin-right: 244px;
+}
+
+.header-menu li:nth-child(4n+1),
+.header-menu li:nth-child(4n+2) { 
+	text-align: left;
+}
+
+.header-menu li:nth-child(4n-1),
+.header-menu li:nth-child(4n) { 
+	text-align: right;
+} 
+
+.header-menu li:nth-child(4n+1) {
+	padding-left: 72px;
+}
+
+.header-menu li:nth-child(4n+2) {
+	padding-left: 73px;
+}
+
+.header-menu li:nth-child(4n-1) {
+	padding-right: 73px;
+}
+
+.header-menu li:nth-child(4n) {
+	padding-right: 72px;
+}
+
+.header-menu a {
+	color: #000;
+	
+	transition-property: color;
+	transition-duration: 0.2s;
+}
+	
 .header-menu a:hover,
 .header-menu a:focus {
 	color: #81b3d2;
