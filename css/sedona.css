@@ -25,6 +25,11 @@ p {
 	margin: 0;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .content-box {
 	box-sizing: content-box;
 }
@@ -259,7 +264,7 @@ p {
 
 .about-description {
 	margin: 0;
-	margin-bottom: 56px;
+	padding-bottom: 56px;
 
 	font-size: 14px;
   font-weight: 400;
@@ -375,8 +380,14 @@ p {
 
 .calendar-button {
 	position: absolute;
+
+	display: block;
+	width: 21px;
+	height: 22px;
 	top: 8px;
 	right: 9px;
+
+	cursor: pointer;
 }
 
 .calendar-button:hover path,
@@ -386,6 +397,10 @@ p {
 
 .calendar-button:active path {
 	fill: #81b3d2;
+}
+
+.calendar-button path {
+	transition: fill 0.3s;
 }
 
 .searchform-checkin {
@@ -400,6 +415,7 @@ p {
 .searchform-checkout input{
 	width: 346px;
 	padding-left: 13px;
+	padding-right: 40px;
 }
 
 .searchform-children,
@@ -739,6 +755,10 @@ p {
 
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
+
+	opacity: 1;
+
+	transition: opacity 0.1s;
 }
 
 .social-button-twitter::before {
@@ -755,8 +775,6 @@ p {
 
 .social-button:active::before {
 	opacity: 0.3;
-	transition-property: opacity;
-	transition-duration: 0.1s;
 }
 
 .footer-copyright {
@@ -798,15 +816,6 @@ p {
 .footer-copyright a:active path {
 	fill: #bdbbbc;
 }
-
-
-
-
-
-
-
-
-
 
 
 
