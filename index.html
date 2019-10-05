@@ -30,10 +30,66 @@
 
 				<section class="about">
 					<h2 class="visually-hidden">Информация о Седоне</h2>
-					<p class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+					<p class="about-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
 				  <p class="about-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 
-					<!-- Не размечаю. В задании было выделено красным -->
+					<ol class="features-list">
+						<li  class="features-item">
+							<div class="features-item-main blue-feature">
+								<h3 class="features-item-title">Настоящий<br>городок</h3>
+								<span  class="features-item-number">— №1 —</span>
+								<p class="features-item-description">Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p>
+							</div>
+							<p class="features-item-picture"><img src="img/images/feature-1.jpg" width="800" height="256" alt="Фотография в городе"></p>
+							<ul class="item-additional">
+								<li>
+									<h4 class="item-additional-title">Жильё</h4>
+									<p class="item-additional-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+								</li>
+								<li>
+									<h4 class="item-additional-title">Еда</h4>
+									<p class="item-additional-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+								</li>
+								<li>
+									<h4 class="item-additional-title">Сувениры</h4>
+									<p class="item-additional-description">Не только китайского, но и местного производства!</p>
+								</li>
+							</ul>
+						</li>
+
+						<li class="features-item">
+							<div class="features-item-main blue-feature">
+								<h3 class="features-item-title">Там есть<br>Мост Дьявола</h3>
+								<span class="features-item-number">— №2 —</span>
+								<p class="features-item-description">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+							</div>
+							<p class="features-item-picture"><img src="img/images/feature-2.jpg" width="800" height="256" alt="Фотография Моста Дьявола"></p>
+						</li>
+
+						<li class="features-item">
+							<div class="features-item-main">
+								<h3 class="features-item-title">Небольшая<br>площадь</h3>
+								<span class="features-item-number">— №3 —</span>
+								<p class="features-item-description">Все достопримечательности<br>находятся очень близко</p>
+							</div>
+						</li>
+
+						<li class="features-item">
+							<div class="features-item-main">
+								<h3 class="features-item-title">Красивая<br>дорога</h3>
+								<span class="features-item-number">— №4 —</span>
+								<p class="features-item-description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+							</div>	
+						</li>
+
+						<li class="features-item">
+							<div class="features-item-main">
+								<h3 class="features-item-title">Мало<br>туристов</h3>
+								<span class="features-item-number">— №5 —</span>
+								<p class="features-item-description">Большинство едет в гранд каньон<br>и толпится там</p>
+							</div>
+						</li>
+					</ol>
 
 				</section>
 
@@ -71,17 +127,17 @@
 							<div class="searchform-item searchform-adults">
 								<label for="number-of-adults">Взрослые: </label>
 								<div class="searchform-minus-plus-container">
-									<span class="searchform-minus">-</span>
+									<span class="searchform-minus">меньше</span>
 									<input type="text" name="number-of-adults" id="number-of-adults" value="" placeholder="2">
-									<span class="searchform-plus">+</span>
+									<span class="searchform-plus">больше</span>
 								</div>
 							</div>
 							<div class="searchform-item searchform-children">
 								<label for="number-of-children">Дети:</label>
 								<div class="searchform-minus-plus-container">
-								  <span class="searchform-minus">-</span>
+								  <span class="searchform-minus">меньше</span>
 									<input type="text" name="number-of-children" id="number-of-children" value="" placeholder="0">
-									<span class="searchform-plus">+</span>
+									<span class="searchform-plus">больше</span>
 								</div>
 							</div>
 
@@ -90,7 +146,6 @@
 						</div>
 					</form>
 				</section>
-
 			</main>
 
 			<footer class="footer">
