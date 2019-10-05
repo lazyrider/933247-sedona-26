@@ -1,4 +1,6 @@
 body {
+	position: relative;
+
 	margin: 0;
 	padding: 0;
 
@@ -391,6 +393,8 @@ img {
 }
 
 .find-hotel {
+	position: relative;
+
 	padding-top: 50px;
 
 	text-align: center;
@@ -428,6 +432,10 @@ img {
 }
 
 .searchform {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
 	width: 568px;
 	margin: 0 auto;
 	padding:0;
@@ -654,6 +662,13 @@ img {
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 58px;
+}
+
+.map {
+	width: 1200px;
+	height: 593px;
+
+	background: #fff url("../img/images/map.jpg") no-repeat 0 0;
 }
 
 .filters-box {
@@ -1180,6 +1195,12 @@ img {
 	opacity: 0.9;
 	}
 
+.index-footer {
+	position: absolute;
+	bottom: 0;
+
+	width: 1200px;
+}
 
 .footer-hashtag {
 	display: block;
