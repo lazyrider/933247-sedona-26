@@ -142,7 +142,7 @@ img {
 .header-menu li {
 	display: block;
 	width: 239px;
-	height: 56px;
+	min-height: 56px;
 	padding-top: 14px;
 
 	color: #000;
@@ -942,7 +942,9 @@ img {
 
 .sorting-method ul {
 	display: flex;
+	flex-wrap: wrap;
 
+	max-width: 780px;
 	margin: 0;
 	margin-left: 39px;
 	padding: 0;
@@ -987,12 +989,15 @@ img {
 }
 
 .sorting-order {
+	width: 50px;
+
 	margin: 0;
 	margin-left: auto;
 	padding-top: 1px;
 	padding-right: 1px;
 
 	font-size: 0;
+	text-align: right;
 
 	user-select: none;
 }
